@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+
+    <!-- นำเข้า Font Bungee -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<!-- flex ใช้ flexbox ให้เป็นเเนวตั้ง(col),items คือแนวขวาง, justify คือแนวหลัก 
+ จะใช้items justify และ h-screen คู่กันเพราะจะได้ให้ทุกอย่างมันอยุ่ตรงกลาง -->
+<body class="flex flex-col items-center justify-center min-h-screen bg-gray-200">
+
+    <!-- battery tab -->
+    <!-- fixed ละตั้ง top0 left0 w-full เพื่อ lock ไว้บนสุดไม่เลื่อนไปไหน-->
+    <div class="w-full md:h-12 h-8 bg-violet-900 fixed top-0 left-0 rounded-b-xl">
+        <div class="pl-8 mt-1 text-white md:text-2xl md:pl-12">18:27</div>
+    </div>
+
+    <!-- Logo -->
+    <divs>
+        <!-- Logo -->
+        <img src="friendgame_logo-removebg-preview.png" alt="FriendGame Logo" class="w-24 h-24 fixed top-20 left-1/2 transform -translate-x-1/2">
+        <div class="font-bold text-black font-bungee">WELCOME TO FRIENDGAME!</div>
+    </divs>
+
+    <!-- tab ปิดล่าง -->
+    <div class="w-full md:h-24 h-16 bg-violet-900 fixed bottom-0 left-0 rounded-t-xl">
+        
+    </div>
+    
+      
+    
+    
+</body>
+</html>
