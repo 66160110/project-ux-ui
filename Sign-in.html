@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+
+    <!-- นำเข้า Font Bungee -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+        .font-bungee {
+            font-family: 'Bungee', sans-serif;
+        }
+    </style>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen bg-gray-200">
+
+    <!-- battery tab -->
+    <div class="w-full md:h-12 h-8 bg-gradient-to-b from-violet-900 to-violet-700 shadow-[0_4px_6px_rgba(0,0,0,0.4)] fixed top-0 left-0 rounded-b-xl">
+        <div class="pl-8 mt-1 text-white md:text-2xl md:pl-12">18:27</div>
+    </div>
+
+    <div class="flex flex-col items-center mb-12">
+        <!-- Logo -->
+        <img src="friendgame_logo-removebg-preview.png" alt="FriendGame Logo" class="w-20 h-20 mb-6 md:w-36 md:h-36">
+
+         <!-- username -->
+         <label class="font-semibold mr-48 mt-3 text-sm md:text-lg md:mr-56">Username</label>
+         <input type="text" placeholder="Username..." class="mt-2 w-64 border rounded-xl border-black pl-3 md:w-80">
+ 
+         <!-- Password -->
+         <label class="font-semibold mr-48 mt-2 text-sm md:text-lg md:mr-56">Password</label>
+         <input type="text" placeholder="Password..." class="mt-2 w-64 border rounded-xl border-black pl-3 md:w-80">
+
+         <!-- Brithdate -->
+         <label class="font-semibold mr-48 mt-4 text-sm md:text-lg md:mr-56">Birthdate</label>
+         <div class="flex justify-between text-xs mt-3">
+         <input type="text" placeholder="Day..." class="w-20 mx-1 border rounded-xl border-black p-1 pl-3">
+         <input type="" placeholder="Month..." class="w-20 mx-1 border rounded-xl border-black p-1 pl-3">
+         <input type="text" placeholder="Year..." class="w-20 mx-1 border rounded-xl border-black p-1 pl-3">
+        </div>
+
+        <!-- Email -->
+        <label class="font-semibold mr-56 mt-4 text-sm md:text-lg md:mr-56">Email</label>
+        <input type="text" placeholder="Email..." class="mt-2 w-64 border rounded-xl border-black pl-3 md:w-80">
+
+        <!-- Phone number -->
+        <label class=" flex-items-left font-semibold mr-40 mt-2 text-sm md:text-lg md:mr-56">Phone number</label>
+        <input type="text" placeholder="Phone number..." class="mt-2 w-64 border rounded-xl border-black pl-3 md:w-80">
+
+        <!-- Submit and cancel -->
+         <!-- buttom ใช้ onclick -->
+        <div class="flex justify-between text-xs mt-4">
+            <button class="w-20 h-6 pb-1 bg-gradient-to-t from-red-900 to-red-500 text-white border rounded-xl border-black mx-3 ml-20" onclick="window.location.href='login.html'">cancel</button>
+            <button class="w-20 h-6 pb-1 bg-gradient-to-t from-violet-900 to-violet-700 text-white border rounded-xl border-black">Submit</button>
+        </div>
+    </div>
+    
+    <!-- tab ปิดล่าง -->
+    <div class="w-full md:h-24 h-16 bg-gradient-to-t from-violet-900 to-violet-700 fixed bottom-0 left-0 rounded-t-xl">
+</body>
+</html>
