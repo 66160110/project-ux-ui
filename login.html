@@ -7,6 +7,13 @@
 
     <!-- นำเข้า Font Bungee -->
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+        .font-bungee {
+            font-family: 'Bungee', sans-serif;
+        }
+    </style>
 
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -17,19 +24,55 @@
 
     <!-- battery tab -->
     <!-- fixed ละตั้ง top0 left0 w-full เพื่อ lock ไว้บนสุดไม่เลื่อนไปไหน-->
-    <div class="w-full md:h-12 h-8 bg-violet-900 fixed top-0 left-0 rounded-b-xl">
+     <!-- bg-greadient คือการไล่สี -->
+    <div class="w-full md:h-12 h-8 bg-gradient-to-b from-violet-900 to-violet-700 shadow-[0_4px_6px_rgba(0,0,0,0.4)] fixed top-0 left-0 rounded-b-xl">
         <div class="pl-8 mt-1 text-white md:text-2xl md:pl-12">18:27</div>
     </div>
 
-    <!-- Logo -->
-    <divs>
+    
+    <div class="flex flex-col items-center mb-16">
         <!-- Logo -->
-        <img src="friendgame_logo-removebg-preview.png" alt="FriendGame Logo" class="w-24 h-24 fixed top-20 left-1/2 transform -translate-x-1/2">
-        <div class="font-bold text-black font-bungee">WELCOME TO FRIENDGAME!</div>
-    </divs>
+        <img src="friendgame_logo-removebg-preview.png" alt="FriendGame Logo" class="w-20 h-20 mb-6 md:w-36 md:h-36">
+        <div class="font-bold text-black font-bungee text-sm md:text-md">WELCOME TO FRIENDGAME!</div>
+
+        <!-- username -->
+        <label class="font-semibold mr-36 mt-4 text-sm md:text-lg md:mr-56">Username</label>
+        <input type="text" placeholder="Username..." class="mt-2 w-60 border rounded-xl border-black pl-3 md:w-80">
+
+        <!-- Password -->
+        <label class="font-semibold mr-36 mt-2 text-sm md:text-lg md:mr-56">Password</label>
+        <input type="text" placeholder="Password..." class="mt-2 w-60 border rounded-xl border-black pl-3 md:w-80">
+
+        <!-- Remember and forgot password -->
+        <div class="flex justify-between text-xs mt-3 md:text-md">
+            <label class="flex items-center mr-9">
+                <input type="checkbox" class="mr-1">
+                Remember for 30 days
+            </label>
+            <a href="#" class="text-violet-900">Forgot password?</a>
+        </div>
+
+        <!-- Sign in -->
+        <button class="w-56 h-14 bg-gradient-to-r from-violet-900 to-violet-700 text-center p-3 mt-4 text-white border rounded-3xl border-black text-lg font-semibold">Sign in</button>
+        <label class="">---or---</label>
+
+        <!-- Sign with google -->
+        <!-- justify-center จัดตัวอักษรและรูปให้อยู่ตรงกลางแนวนอน -->
+        <button class="w-56 h-14 bg-white text-center flex items-center justify-center gap-x-2 p- mt-1 text-black border rounded-3xl border-black text-sm font-semibold">
+            Sign in with Google
+            <img src="Google__G__logo.svg.webp" alt="Google-logo" class="w-5">
+        </button>
+
+        <!-- No account and sign up -->
+        <div class="flex justify-between text-xs mt-2 md:text-md">
+            <label class="flex items-center mr-9">Don't have an account?</label>
+            <a href="#" class="text-violet-900">Sign Up?</a>
+        </div>
+
+    </div>
 
     <!-- tab ปิดล่าง -->
-    <div class="w-full md:h-24 h-16 bg-violet-900 fixed bottom-0 left-0 rounded-t-xl">
+    <div class="w-full md:h-24 h-16 bg-gradient-to-t from-violet-900 to-violet-700 fixed bottom-0 left-0 rounded-t-xl">
         
     </div>
     
