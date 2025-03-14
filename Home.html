@@ -17,7 +17,7 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="flex flex-col items-center justify-center min-h-screen bg-gray-200">
+<body class="flex flex-col items-center justify-center min-h-screen bg-gray-200 min-h-screen overflow-y-auto">
 
     <!-- battey tab -->
     <div class="w-full md:h-12 h-8 bg-gradient-to-t from-[#7E60BF] to-[#3B2D59] shadow-[0_4px_6px_rgba(0,0,0,0.4)] fixed top-0 left-0 rounded-b-xl"> 
@@ -95,6 +95,133 @@
             </div>    
         </div>
     </div>
+
+    <!-- post page --> 
+    <!-- ใช้ absolute แทน fixed เพราะไม่งั้นจะไม่สามารถใช้ overflow-y-auto สำหรับเลื่อนขึ้นลงได้-->
+    <!-- absolute คือ fixed หรือจะเหมือน fixed แต่ยังสามารถเปลี่ยนได้อีก โดยที่ fixed จะล็อคเลยและไม่สามารถเปลี่ยนได้-->
+    <div class=" bg-white absolute w-full h-[400px] mt-32 border rounded-t-xl border-black">
+        <div class="flex justify-between">
+            <img src="picture/frogger-meme.jpg" alt="forgger-profile" class="h-8 border rounded-3xl border-black mt-5 ml-4">
+            <div class="flex flex-col mt-5 pr-[150px]">
+                <label class="text-[12px] font-semibold">Frogger</label>
+                <label class ="text-[8px] font-semibold">play Valorant</label>
+            </div>
+            <button class="px-2 my-4 bg-gray-200 border rounded-2xl border-black text-[12px] mt-[25px] mr-2">Follow</button>
+            <img src="picture/3-dot-menu.png" alt="3-dot-menu" class="h-[6px] mt-[32.5px] mr-4">
+        </div>
+
+        <img src="picture/post-Valogame.png" alt="Post-Valo-game" class="border border-black mt-1 w-full h-[180px]">
+
+        <div class="flex justify-between h-7 mt-2">
+            <img src="picture/Likeicon.png" alt="like-icon"  class="ml-5">
+            <img src="picture/comment-icon.png" alt="comment-icon">
+            <img src="picture/save-icon.png" alt="save-icon" class="mr-[160px]">
+            <img src="picture/share-icon.png" alt="share-icon" class="mr-5">
+        </div>
+
+        <div class="flex flex-col ml-4">
+            <div class="text-[12px] mt-2">
+                <label class="font-bold">ChingChong</label>
+                <label class="">and</label>
+                <label class="font-bold">other people</label>
+                <label class="">Like it!</label>
+            </div>
+
+            <div class="text-[12px] mt-1">
+                <label class="font-bold">Frogger</label>
+                <label class="">Nah this game is too much can someone help?? </label>
+            </div>
+
+            <div class="text-[12px] mt-1">
+                <label class="font-bold">BAtaca</label>
+                <label class="">Let’s me help boi. DM me.</label>
+            </div>
+
+            <div class="text-[12px] mt-1">
+                <label class="font-bold">Frogger</label>
+                <label class="">Ty mate :3</label>
+            </div>
+        </div>
+    </div>
+
+    <div class=" bg-white absolute w-full h-[400px] mt-[1000px] border rounded-t-xl border-black">
+        <div class="flex justify-between">
+            <img src="picture/gru-meme-profile.jpg" alt="forgger-profile" class="h-8 border rounded-3xl border-black mt-5 ml-4">
+            <div class="flex flex-col mt-5 pr-[150px]">
+                <label class="text-[12px] font-semibold">BakGru</label>
+                <label class ="text-[8px] font-semibold">play CSGO</label>
+            </div>
+            <button class="px-2 my-4 bg-gray-200 border rounded-2xl border-black text-[12px] mt-[25px] mr-2">Follow</button>
+            <img src="picture/3-dot-menu.png" alt="3-dot-menu" class="h-[6px] mt-[32.5px] mr-4">
+        </div>
+
+        <img src="picture/Post-csgo.png" alt="Post-Valo-game" class="border border-black mt-1 w-full h-[180px]">
+
+        <div class="flex justify-between h-7 mt-2">
+            <img src="picture/Likeicon.png" alt="like-icon"  class="ml-5">
+            <img src="picture/comment-icon.png" alt="comment-icon">
+            <img src="picture/save-icon.png" alt="save-icon" class="mr-[160px]">
+            <img src="picture/share-icon.png" alt="share-icon" class="mr-5">
+        </div>
+
+        <div class="flex flex-col ml-4">
+            <div class="text-[12px] mt-2">
+                <label class="font-bold">ChingChong</label>
+                <label class="">and</label>
+                <label class="font-bold">other people</label>
+                <label class="">Like it!</label>
+            </div>
+
+            <div class="text-[12px] mt-1">
+                <label class="font-bold">BromBacrat</label>
+                <label class="">What skin is DAT!? </label>
+            </div>
+
+            <div class="text-[12px] mt-1">
+                <label class="font-bold">BakGru</label>
+                <label class="">BakGru 😏</label>
+            </div>
+        </div>
+    </div>
+
+    <div class=" bg-white absolute w-full h-[400px] mt-[1870px] border rounded-t-xl border-black">
+        <div class="flex justify-between">
+            <img src="picture/dubtoe-meme-profile.png" alt="forgger-profile" class="h-8 border rounded-3xl border-black mt-5 ml-4">
+            <div class="flex flex-col mt-5 pr-[150px]">
+                <label class="text-[12px] font-semibold">NAHHH</label>
+                <label class ="text-[8px] font-semibold">play Roblox</label>
+            </div>
+            <button class="px-2 my-4 bg-gray-200 border rounded-2xl border-black text-[12px] mt-[25px] mr-2">Follow</button>
+            <img src="picture/3-dot-menu.png" alt="3-dot-menu" class="h-[6px] mt-[32.5px] mr-4">
+        </div>
+
+        <img src="picture/roblox-post.png" alt="Post-Valo-game" class="border border-black mt-1 w-full h-[180px]">
+
+        <div class="flex justify-between h-7 mt-2">
+            <img src="picture/Likeicon.png" alt="like-icon"  class="ml-5">
+            <img src="picture/comment-icon.png" alt="comment-icon">
+            <img src="picture/save-icon.png" alt="save-icon" class="mr-[160px]">
+            <img src="picture/share-icon.png" alt="share-icon" class="mr-5">
+        </div>
+
+        <div class="flex flex-col ml-4">
+            <div class="text-[12px] mt-2">
+                <label class="font-bold">other people</label>
+                <label class="">Like it!</label>
+            </div>
+
+            <div class="text-[12px] mt-1">
+                <label class="font-bold">NAHHH</label>
+                <label class="">What is this MAP!!? </label>
+            </div>
+
+            <div class="text-[12px] mt-1">
+                <label class="font-bold">LOIS!</label>
+                <label class="">what the...</label>
+            </div>
+        </div>
+    </div>
+
 
     <div class="w-full md:h-24 h-16 bg-gradient-to-b from-[#7E60BF] to-[#3B2D59] fixed bottom-0 left-0 rounded-t-xl"></div>
 
