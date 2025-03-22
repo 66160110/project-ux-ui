@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+
+    <!-- นำเข้า Font Bungee -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+        .font-bungee {
+            font-family: 'Bungee', sans-serif;
+        }
+    </style>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="javasc.js" defer></script>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen bg-gray-200 min-h-screen overflow-y-auto">
+
+    <!-- battey tab -->
+    <div class=" w-full md:h-12 h-8 bg-gradient-to-t from-[#7E60BF] to-[#3B2D59] shadow-[0_4px_6px_rgba(0,0,0,0.4)] fixed top-0 left-0 rounded-b-xl"> 
+        <div class="flex justify-between pl-6 pt-1">
+            <div class=" text-white md:text-2xl">18:27</div>
+            <img src="picture/istockphoto-1342489915-612x612-removebg-preview.png" alt="battey tab" class="w-16 h-10 -mt-2 mx-5 md:w-24 md:h-16 md:-mt-3">
+        </div>
+    </div>
+
+    <div class="flex flex-col items-center w-full h-[150px] bg-gradient-to-t from-[#7E60BF] to-[#3B2D59] mt-[-420px] border border-black rounded-t-2xl">
+        <label class="font-bungee text-white mt-5">Are you looking for someone?</label>
+        <!-- relative เอาไว้ให้ input และ img อยู่ในกล่องเดียวกับ แบบให้ทับกันเอง -->
+        <div class="relative mt-5">
+            <input type="text" placeholder="Who???" class="pl-10 w-[300px] rounded-3xl border border-black h-8">
+            <img src="picture/search-black-icon.png" alt="search" class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5">
+        </div>   
+    </div>
+
+    <!-- Beruga profile -->
+    <div class="flex justify-between absolute w-full h-[70px] mt-[-140px] bg-white border border-black rounded-2xl">
+        <img src="picture/Beluga-profile.png" alt="Beluga-profile" class="h-10 mt-[13px] ml-3">
+        <div class="flex flex-col mr-[90px] mt-2">
+            <label class="text-[15px] self-start">Beluga</label>
+            <label class="text-[8px] self-start">19 y | USA</label>
+            <label class="text-[8px] self-start">Valorant | Roblox | CSGO | PUBG</label>
+        </div>
+        <button class="px-4 my-5 bg-gray-200 border rounded-2xl border-black text-[12px] mr-3" onclick="toggleFollow(this)">Follow</button>
+    </div>
+
+    <!-- Adam007 profile -->
+    <div class="flex justify-between absolute w-full h-[70px] mt-[20px] bg-white border border-black rounded-2xl">
+        <img src="picture/Adam-profile.png" alt="Adam-profile" class="h-10 mt-[13px] ml-3">
+        <div class="flex flex-col mr-[90px] mt-2">
+            <label class="text-[15px] self-start">Adam007</label>
+            <label class="text-[8px] self-start">27 y | Canada</label>
+            <label class="text-[8px] self-start">Valorant | Overwatch | M rival</label>
+        </div>
+        <button class="px-4 my-5 bg-gray-200 border rounded-2xl border-black text-[12px] mr-3" onclick="toggleFollow(this)">Follow</button>
+    </div>
+
+    <!-- STonker-profile -->
+    <div class="flex justify-between absolute w-full h-[70px] mt-[180px] bg-white border border-black rounded-2xl">
+        <img src="picture/stonker-profile.png" alt="STonKer-profile" class="h-10 mt-[13px] ml-3">
+        <div class="flex flex-col mr-[125px] mt-2">
+            <label class="text-[15px] self-start">STonKer</label>
+            <label class="text-[8px] self-start">22 y | Thailand</label>
+            <label class="text-[8px] self-starts">LoL | Dota2 | Roblox</label>
+        </div>
+        <button class="px-4 my-5 bg-gray-200 border rounded-2xl border-black text-[12px] mr-3" onclick="toggleFollow(this)">Follow</button>
+    </div>
+
+    <!-- Sobeautiful-profile -->
+    <div class="flex justify-between absolute w-full h-[70px] mt-[340px] bg-white border border-black rounded-2xl">
+        <img src="picture/Sobeautiful-profile.png" alt="Sobeautiful-profile" class="h-10 mt-[13px] ml-3">
+        <div class="flex flex-col mr-[125px] mt-2">
+            <label class="text-[15px] self-start">Sobeautiful</label>
+            <label class="text-[8px] self-start">22 y | Taiwan</label>
+            <label class="text-[8px] self-start">Valorant</label>
+        </div>
+        <button class="px-4 my-5 bg-gray-200 border rounded-2xl border-black text-[12px] mr-3" onclick="toggleFollow(this)">Follow</button>
+    </div>
+
+    <!-- Lickbanana-profile -->
+    <div class="flex justify-between absolute w-full h-[70px] mt-[500px] bg-white border border-black rounded-2xl">
+        <img src="picture/Lickbanana-profile.png" alt="Lickbanana-profile" class="h-10 mt-[13px] ml-3">
+        <div class="flex flex-col mr-[90px] mt-2 self-start">
+            <label class="text-[15px]">Lickbanana</label>
+            <label class="text-[8px]">16 y | France</label>
+            <label class="text-[8px]">Valorant | LoL | Dota2 | Roblox</label>
+        </div>
+        <button class="px-4 my-5 bg-gray-200 border rounded-2xl border-black text-[12px] mr-3" onclick="toggleFollow(this)">Follow</button>
+    </div>
+
+    <!-- NAHmang-profile -->
+    <div class="flex justify-between absolute w-full h-[70px] mt-[660px] bg-white border border-black rounded-2xl pb-">
+        <img src="picture/NAHmang-profile.png" alt="NAHmang-profile" class="h-10 mt-[13px] ml-3">
+        <div class="flex flex-col mr-[95px] mt-2 self-start">
+            <label class="text-[15px]">NAHmang</label>
+            <label class="text-[8px]">18 y | Vietnam</label>
+            <label class="text-[8px]">Valorant</label>
+        </div>
+        <button class="px-4 my-5 bg-gray-200 border rounded-2xl border-black text-[12px] mr-3" onclick="toggleFollow(this)">Follow</button>
+    </div>
+
+    <!-- Menu tab -->
+    <div class="w-full md:h-24 h-16 bg-gradient-to-b from-[#7E60BF] to-[#3B2D59] fixed bottom-0 left-0 rounded-t-xl items-center">
+        <div class="flex justify-between w-full pt-2 items-center">
+            <img src="picture/Home-icon.png" alt="Home-icon" class="w-9 ml-5" onclick="window.location.href='Home.html'">
+            <img src="picture/search-icon.png" alt="search-icon" class=" w-9" onclick="window.location.href='Search.html'">
+            <img src="picture/notification-icon.png"alt="noti-icon" class=" w-9" onclick="window.location.href='Notifications.html'">
+            <img src="picture/profile-icom.png" alt="profile-icon" class=" w-9 mr-5" onclick="window.location.href='Profile.html'">
+        </div>
+    </div>
+
+</body>
+</html>

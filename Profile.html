@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+
+    <!-- นำเข้า Font Bungee -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+        .font-bungee {
+            font-family: 'Bungee', sans-serif;
+        }
+    </style>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="javasc.js" defer></script>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen bg-gray-200 min-h-screen overflow-y-auto">
+
+    <!-- battey tab -->
+    <div class=" w-full md:h-12 h-8 bg-gradient-to-t from-[#7E60BF] to-[#3B2D59] shadow-[0_4px_6px_rgba(0,0,0,0.4)] fixed top-0 left-0 rounded-b-xl"> 
+        <div class="flex justify-between pl-6 pt-1">
+            <div class=" text-white md:text-2xl">18:27</div>
+            <img src="picture/istockphoto-1342489915-612x612-removebg-preview.png" alt="battey tab" class="w-16 h-10 -mt-2 mx-5 md:w-24 md:h-16 md:-mt-3">
+        </div>
+    </div>
+
+    <div class="flex flex-col w-full ">
+        <div class="absolute w-full h-[400px] mt-[-80px] bg-gradient-to-b from-[#A2D015] to-[#526A0B]">
+            <!-- Posts followers followings -->
+            <div class="flex justify-between ml-[160px] mr-[50px] text-xs mt-[10px]">
+                <div class="flex flex-col font-bold">
+                    <label class="self-start">Post</label>
+                    <label class="self-center">5</label>
+                </div>
+
+                <div class="flex flex-col font-bold">
+                    <label class="self-start">Follwers</label>
+                    <label class="self-center">389</label>
+                </div>
+
+                <div class="flex flex-col font-bold">
+                    <label class="self-start">Followings</label>
+                    <label class="self-center">438</label>
+                </div>
+            </div>
+
+            <!-- about me -->
+            <div class="flex justify-center items-center w-full h-[350px]">
+                <div class="w-[300px] h-[280px] bg-gradient-to-b from-[#D1FF47] to-[#7D992B] mt-[-35px] border border-black rounded-2xl">
+                    <div class="flex justify-between ">
+                        <label class="font-bold ml-6 mt-[10px] text-[20px]">Mikey</label>
+                        <img src="picture/custom-profile.png" alt="custom-profile" class="h-8 ml-[90px] mt-[12px]">
+                        <img src="picture/hamberger-menu-icon.png" alt="hamberger-menu-icon" class="h-6 mr-6 mt-[17px]">
+                    </div>
+
+                    <div class="mt-[10px] pb-[1px] bg-gray-200 w-[105px] ml-[10px] items-center border border-black rounded-2xl">
+                        <label class="text-[10px] ml-[15px] self-center font-semibold">20 y |  Thailand</label>
+                    </div>
+
+                    <div class="mt-[5px] pb-[2px] bg-gray-200 w-[180px] ml-[10px] items-center border border-black rounded-2xl">
+                        <label class="text-[10px] ml-[15px] self-center font-semibold">Valorant | Roblox | CSGO | PUBG</label>
+                    </div>
+
+                    <div class="mt-[5px] pb-[2px] bg-gray-200 w-[265px] ml-[10px] items-center border border-black rounded-2xl">
+                        <label class="text-[9px] ml-[15px] self-start font-semibold">We need 5 people for play Valorant but We 
+                            have only 4.</label>
+                            <label class="text-[9px] ml-[15px] self-start font-semibold">why I made this app;-;</label>
+                    </div>
+
+                    <div class="ml-[9px] mt-[10px] w-[280px] h-[90px] bg-white border border-black rounded-2xl">
+                        <label class="text-[10px] font-bold ml-[13px]">My post</label>
+                        <div class="flex justify-between h-[55px] w-full mt-[5px]">
+                            <img src="picture/marvelmypost.png" alt="marvelmypost" class="ml-8">
+                            <img src="picture/robloxmypost.png" alt="robloxmypost" class="">
+                            <img src="picture/robloxmypost2.png" alt="robloxmypost2" class="mr-8">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="picture/mike-wazowski-gif-bg.gif" alt="mike-wazowski-gif-bg" class="w-full h-[200px] absolute mt-[-280px] border border-black">
+        <img src="picture/my-profile.png" alt="my-profile" class="absolute h-[100px] mt-[-130px] ml-[30px] ">
+    </div>
+
+    <!-- Menu tab -->
+    <div class="w-full md:h-24 h-16 bg-gradient-to-b from-[#7E60BF] to-[#3B2D59] fixed bottom-0 left-0 rounded-t-xl items-center">
+        <div class="flex justify-between w-full pt-2 items-center">
+            <img src="picture/Home-icon.png" alt="Home-icon" class="w-9 ml-5" onclick="window.location.href='Home.html'">
+            <img src="picture/search-icon.png" alt="search-icon" class=" w-9" onclick="window.location.href='Search.html'">
+            <img src="picture/notification-icon.png"alt="noti-icon" class=" w-9" onclick="window.location.href='Notifications.html'">
+            <img src="picture/profile-icom.png" alt="profile-icon" class=" w-9 mr-5" onclick="window.location.href='Profile.html'">
+        </div>
+    </div>
+    
+</body>
+</html>
