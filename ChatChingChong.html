@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+
+    <!-- นำเข้า Font Bungee -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+        .font-bungee {
+            font-family: 'Bungee', sans-serif;
+        }
+    </style>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="javasc.js" defer></script>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen bg-white-200 min-h-screen overflow-y-auto">
+
+    <!-- battey tab -->
+    <div class=" w-full md:h-12 h-8 bg-gradient-to-t from-[#7E60BF] to-[#3B2D59] shadow-[0_4px_6px_rgba(0,0,0,0.4)] fixed top-0 left-0 rounded-b-xl"> 
+        <div class="flex justify-between pl-6 pt-1">
+            <div class=" text-white md:text-2xl">18:27</div>
+            <img src="picture/istockphoto-1342489915-612x612-removebg-preview.png" alt="battey tab" class="w-16 h-10 -mt-2 mx-5 md:w-24 md:h-16 md:-mt-3">
+        </div>
+    </div>
+
+    <!-- name tab -->
+    <div class="absolute mt-[-470px] flex justify-between w-full h-[60px] bg-gradient-to-b from-[#7E60BF] to-[#3B2D59] border border-black">
+        <img src="picture/backtohome-icon.png" alt="backtohome-icon" class="rounded-3xl h-[40px] mt-[10px] ml-7" onclick="window.location.href='Chat.html'">
+        <img src="picture/chingchong-profile-white.png" alt="ChinChong-profile" class="h-[50px] mt-[5px] ml-[20px]">
+        <label class="text-white font-semibold mt-[15px] mr-[40px]">ChingChong</label>
+        <img src="picture/phone-icon.png" alt="phone-icon" class="h-[35px] mt-[12px] mr-7">
+    </div>
+
+    <!-- chat text,emoji,camera,mic,picture -->
+    <div class="w-full md:h-24 h-16 bg-gradient-to-b from-[#7E60BF] to-[#3B2D59] fixed bottom-0 left-0 items-center">
+        <div class="flex justify-between items-center w-full">
+            <div class="relative pt-[10px] pl-[10px]">
+                <input type="text" placeholder="send something" class="pl-[20px] w-[220px] h-[35px] border border-black rounded-3xl">
+                <img src="picture/emoji-icon.png" alt="emoji-icon" class="h-[30px] mt-[5px] absolute right-3 top-1/2 transform -translate-y-1/2 h-[25px] cursor-pointer">
+            </div>
+            
+            <img src="picture/camera-white-icon.png" alt="camera-white-icon" class="h-[35px] mt-[10px]">
+            <img src="picture/mic-icon.png" alt="mic-icon" class="h-[35px] mt-[10px]">
+            <img src="picture/picture-icon.png" alt="picture-icon" class="h-[35px] pr-[10px] mt-[10px]">
+        </div>
+    </div>
+
+</body>
+</html>
