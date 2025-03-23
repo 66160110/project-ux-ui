@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+
+    <!-- นำเข้า Font Bungee -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+        .font-bungee {
+            font-family: 'Bungee', sans-serif;
+        }
+    </style>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="javasc.js" defer></script>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen bg-gray-200 min-h-screen overflow-y-auto">
+
+    <!-- battey tab -->
+    <div class=" w-full md:h-12 h-8 bg-gradient-to-t from-[#7E60BF] to-[#3B2D59] shadow-[0_4px_6px_rgba(0,0,0,0.4)] fixed top-0 left-0 rounded-b-xl"> 
+        <div class="flex justify-between pl-6 pt-1">
+            <div class=" text-white md:text-2xl">18:27</div>
+            <img src="picture/istockphoto-1342489915-612x612-removebg-preview.png" alt="battey tab" class="w-16 h-10 -mt-2 mx-5 md:w-24 md:h-16 md:-mt-3">
+        </div>
+    </div>
+
+    <!-- Notification Head label -->
+     <div class="flex flex-col mt-[-490px] w-full h-[80px] border border-black rounded-t-2xl bg-gradient-to-t from-[#7E60BF] to-[#3B2D59] shadow-[0_4px_6px_rgba(0,0,0,0.4)]">
+        <div class="flex justify-between items-center ml-8 mr-8 pt-5">
+            <label class="font-bungee text-white text-xl">Create post</label>
+            <img src="picture/backtohome-icon.png " alt="search-notifications-icon" class="h-[35px] rounded-3xl" onclick="window.location.href='Home.html'">
+        </div>    
+     </div>
+
+     <!-- profile / btn post,back -->
+     <div class="absolute flex justify-between items-center mt-[-310px] left-[40px]">
+        <img src="picture/myprofileinpost.png" alt="Myprofile-inchat" class="h-[45px]">
+        <label class="font-bungee ml-[20px]">Hi mikey</label>
+        <button class="left-[215px] absolute w-[80px] h-[30px] bg-gradient-to-b from-[#E4B1F0] to-[#83668A] border border-black rounded-2xl text-[12px] text-white" onclick="window.location.href='Home.html'">Post</button>
+      </div >  
+
+      <!-- insert photo -->
+      <div class="absolute flex flex-col items-center mt-[-50px] w-full h-[160px] bg-gray-300 border border-black rounded-2xl ">
+        <img src="picture/insertphoto-icon.png" alt="insertphoto-icon" class="h-[80px] mt-[20px] mb-[10px]">
+        <label class="text-[12px]">insert your photos</label>
+      </div>
+
+      <div class="absolute flex flex-col  mt-[320px] w-full h-[170px] bg-gray-300 border border-black rounded-2xl" >
+        <label class="ml-[20px] text-[11px] mt-[6px] ">What game is this?</label>
+        <input type="text" placeholder="Select game" class="border border-black rounded-3xl pl-[10px] w-[250px] text-[14px] ml-[20px] mt-[6px]">
+        <label class="ml-[20px] text-[11px] mt-[6px] ">What do you want to say?</label>
+        <input type="text" placeholder="" class="border border-black rounded-3xl h-[75px] pl-[20px] w-[335px] ml-[20px] mt-[6px]">
+      </div>
+
+              <!-- Menu tab -->
+    <div class="w-full md:h-24 h-16 bg-gradient-to-b from-[#7E60BF] to-[#3B2D59] fixed bottom-0 left-0 rounded-t-xl items-center">
+        <div class="flex justify-between w-full pt-2 items-center">
+            <img src="picture/Home-icon.png" alt="Home-icon" class="w-9 ml-5" onclick="window.location.href='Home.html'">
+            <img src="picture/search-icon.png" alt="search-icon" class=" w-9" onclick="window.location.href='Search.html'">
+            <img src="picture/notification-icon.png"alt="noti-icon" class=" w-9" onclick="window.location.href='Notifications.html'">
+            <img src="picture/profile-icom.png" alt="profile-icon" class=" w-9 mr-5" onclick="window.location.href='Profile.html'">
+        </div>
+    </div>
+
+</body>
+</html>
+    
