@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+
+    <!-- นำเข้า Font Bungee -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+        .font-bungee {
+            font-family: 'Bungee', sans-serif;
+        }
+    </style>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="javasc.js" defer></script>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen bg-gray-200 min-h-screen overflow-y-auto">
+
+    <!-- battey tab -->
+    <div class=" w-full md:h-12 h-8 bg-gradient-to-t from-[#7E60BF] to-[#3B2D59] shadow-[0_4px_6px_rgba(0,0,0,0.4)] fixed top-0 left-0 rounded-b-xl"> 
+        <div class="flex justify-between pl-6 pt-1">
+            <div class=" text-white md:text-2xl">18:27</div>
+            <img src="picture/istockphoto-1342489915-612x612-removebg-preview.png" alt="battey tab" class="w-16 h-10 -mt-2 mx-5 md:w-24 md:h-16 md:-mt-3">
+        </div>
+    </div>
+
+    <!-- bg and profile -->
+    <div class="flex flex-col items-center mt-[-360px]">
+        <img src="picture/mike-wazowski-gif-bg.gif" alt="mike-wazowski-gif-bg" class="w-[375px] h-[200px] border border-black">
+        <img src="picture/my-profile.png" alt="my-profile" class="absolute h-[80px] mt-[150px]">
+    </div>
+
+    <div class="absolute flex justify-center items-center w-full h-[350px]">
+        <div class="w-[300px] h-[300px] bg-gray-300 border border-black rounded-2xl mt-[220px]">
+            <label class="ml-[20px] text-[11px] mt-[6px] ">Username</label>
+            <input type="text" placeholder="Mikey" class="text-black border border-black rounded-3xl pl-[10px] w-[250px] text-[14px] ml-[20px] mt-[6px]">
+            <label class="ml-[20px] text-[11px] mt-[6px] ">Choose yuor game</label>
+            <div class="relative ml-[20px] mt-[6px]">
+                <img src="picture/selectgame-icon.png" alt="selectgame-icon" class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5">
+                <input type="text" placeholder="select your game" class="pl-10 w-[250px] rounded-3xl border border-black text-[14px]">
+            </div>   
+            <label class="ml-[20px] text-[11px] mt-[6px] ">About me</label>
+            <textarea rows="3" placeholder="We need 5 people for play Valorant  but We have only 4. That why I made this app;-;" class="w-[250px] p-1 border border-gray-400 rounded-lg resize-none ml-[20px] text-[12px] mt-[6px]"></textarea>
+            <label class="ml-[20px] text-[11px] mt-[6px]">Theme color</label>
+            <div class="w-[60px] h-[25px] ml-[20px] mt-[6px] border border-black rounded-3xl bg-gradient-to-b from-[#B4DC3D] to-[#617621]"></div>
+
+            <div class="flex justify-between items-center mt-[6px]">
+                <button class="left-[180px] absolute w-[55px] h-[25px] bg-gradient-to-b from-[#F27676] to-[#8C4444] border border-black rounded-2xl text-[12px] text-white" onclick="window.location.href='setting-profile.html'">Back</button>
+                <button class="left-[250px] absolute w-[55px] h-[25px] bg-gradient-to-b from-[#E4B1F0] to-[#83668A] border border-black rounded-2xl text-[12px] text-white" onclick="window.location.href='profile.html'">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full md:h-24 h-16 bg-gradient-to-b from-[#7E60BF] to-[#3B2D59] fixed bottom-0 left-0 rounded-t-xl items-center">
+        <div class="flex justify-between w-full pt-2 items-center">
+            <img src="picture/Home-icon.png" alt="Home-icon" class="w-9 ml-5" onclick="window.location.href='Home.html'">
+            <img src="picture/search-icon.png" alt="search-icon" class=" w-9" onclick="window.location.href='Search.html'">
+            <img src="picture/notification-icon.png"alt="noti-icon" class=" w-9" onclick="window.location.href='Notifications.html'">
+            <img src="picture/profile-icom.png" alt="profile-icon" class=" w-9 mr-5" onclick="window.location.href='Profile.html'">
+        </div>
+    </div>
+
+</body>
+</html>
+    
