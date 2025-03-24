@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+
+    <!-- นำเข้า Font Bungee -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+        .font-bungee {
+            font-family: 'Bungee', sans-serif;
+        }
+    </style>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="javasc.js" defer></script>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen bg-gray-200 min-h-screen overflow-y-auto">
+
+    <!-- battey tab -->
+    <div class=" w-full md:h-12 h-8 bg-gradient-to-t from-[#7E60BF] to-[#3B2D59] shadow-[0_4px_6px_rgba(0,0,0,0.4)] fixed top-0 left-0 rounded-b-xl"> 
+        <div class="flex justify-between pl-6 pt-1">
+            <div class=" text-white md:text-2xl">18:27</div>
+            <img src="picture/istockphoto-1342489915-612x612-removebg-preview.png" alt="battey tab" class="w-16 h-10 -mt-2 mx-5 md:w-24 md:h-16 md:-mt-3">
+        </div>
+    </div>
+
+    <!-- Setting Head label -->
+    <div class="flex flex-col mt-[-490px] w-full h-[80px] border border-black rounded-t-2xl bg-gradient-to-t from-[#7E60BF] to-[#3B2D59] shadow-[0_4px_6px_rgba(0,0,0,0.4)]">
+        <div class="flex justify-between items-center ml-8 mr-8 pt-5">
+            <label class="font-bungee text-white text-xl">Settings</label>
+            <img src="picture/search-notifications-icon.png " alt="search-notifications-icon" class="h-[35px]">
+        </div>    
+     </div>
+
+    <div class="absolute flex justify-between w-full h-[60px] mt-[-260px] bg-gray-300 border border-black">
+        <img src="picture/History-icon.png" alt="History-icon" class="h-[40px] mt-[8.5px] ml-auto mr-[30px]">
+        <label class="text-[18px] font-bold mr-[200px] mt-[15px]">History</label>
+        
+    </div>
+
+    <div class="absolute flex items-center w-full h-[60px] mt-[-140px] bg-gray-300 border border-black">
+        <img src="picture/save-icon-purple.png" alt="save-icon-purple" class="h-[40px] mt-[4px] ml-auto mr-[30px]">
+        <label class="text-[18px] font-bold mr-[137px] mt-[px]">Save inventory</label>
+    </div>
+
+    <div class="absolute flex justify-between w-full h-[60px] mt-[-20px] bg-gray-300 border border-black">
+        <img src="picture/privacy-icon.png" alt="privacy-icon" class="h-[40px] mt-[8.5px] ml-auto mr-[30px]">
+        <label class="text-[18px] font-bold mr-[138px] mt-[15px]">Privacy setting</label>
+    </div>
+
+    <div class="absolute flex justify-between w-full h-[60px] mt-[100px] bg-gray-300 border border-black">
+        <img src="picture/helpandReport-icon.png" alt="helpandReport-icon" class="h-[40px] mt-[8.5px] ml-auto mr-[30px]">
+        <label class="text-[18px] font-bold mr-[124px] mt-[15px]">Help and Report</label>
+    </div>
+
+    <div class="absolute flex justify-between w-full h-[60px] mt-[220px] bg-gray-300 border border-black">
+        <img src="picture/Language-icon.png" alt="Language-icon" class="h-[40px] mt-[8.5px] ml-auto mr-[30px]">
+        <label class="text-[18px] font-bold mr-[185px] mt-[15px]">language</label>
+    </div>
+
+    <div class="absolute flex justify-between w-full h-[60px] mt-[340px] bg-gray-300 border border-black">
+        <img src="picture/setting-icom.png" alt="setting-icom" class="h-[40px] mt-[8.5px] ml-auto mr-[30px]">
+        <label class="text-[18px] font-bold mr-[203px] mt-[15px]">Setting</label>
+    </div>
+
+    <div class="absolute flex justify-between w-full h-[60px] mt-[460px] bg-gray-300 border border-black">
+        <img src="picture/Logout-icon.png" alt="Logout-icon" class="h-[40px] mt-[8.5px] ml-auto mr-[30px]">
+        <label class="text-[18px] font-bold mr-[198px] mt-[15px]">Log out</label>
+    </div>
+
+    <!-- Menu tab -->
+    <div class="w-full md:h-24 h-16 bg-gradient-to-b from-[#7E60BF] to-[#3B2D59] fixed bottom-0 left-0 rounded-t-xl items-center">
+        <div class="flex justify-between w-full pt-2 items-center">
+            <img src="picture/Home-icon.png" alt="Home-icon" class="w-9 ml-5" onclick="window.location.href='Home.html'">
+            <img src="picture/search-icon.png" alt="search-icon" class=" w-9" onclick="window.location.href='Search.html'">
+            <img src="picture/notification-icon.png"alt="noti-icon" class=" w-9" onclick="window.location.href='Notifications.html'">
+            <img src="picture/profile-icom.png" alt="profile-icon" class=" w-9 mr-5" onclick="window.location.href='Profile.html'">
+        </div>
+    </div>
+
+</body>
+</html>

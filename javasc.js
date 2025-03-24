@@ -26,3 +26,5 @@ module.exports = {
     img.setAttribute("src",altSrc);
     img.setAttribute("data-alt-src",currentSrc);
   }
+
+  
